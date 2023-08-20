@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import List from './List';
+import data from './data';
 
 function App() {
-    return <h2>reminder project setup Loi</h2>;
+    const [people, setPeople] = useState(data);
+    return (
+        <main>
+            <section className="container">
+                <h3>{people.length} birdthdays today</h3>
+                <List people={people} />
+                <button onClick={() => setPeople([])}>Clear All</button>
+            </section>
+        </main>
+    );
 }
 
 export default App;
