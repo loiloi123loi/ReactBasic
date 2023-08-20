@@ -1,0 +1,25 @@
+{
+    "name": "server_test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.4.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "express-async-errors": "^3.1.1",
+        "fs": "^0.0.1-security",
+        "http-status-codes": "^2.2.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
+}
